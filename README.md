@@ -1,1 +1,10 @@
 # TransformerMusicGenerate
+When loading musicautobot git, ensure musicautobot.musicautobot.vocab Line 1 reads "from fastai1.fastai.basics import *"
+musicautobot.musicautobot.config Line 1 reads "from fastai1.fastai.text.models.transformer import tfmerXL_lm_config, Activation"
+musicautobot.musicautobot.music_transformer.dataloader Line 2 reads "from fastai1.fastai.basics import *"
+musicautobot.musicautobot.music_transformer.dataloader Line 4 reads "from fastai1.fastai.text.data import LMLabelList"
+musicautobot.musicautobot.music_transformer.learner Line 1 reads "from fastai1.fastai.basics import *"
+musicautobot.musicautobot.music_transformer.learner Line 2 reads "from fastai.text.learner import LanguageLearner, get_language_model, _model_meta"
+musicautobot.musicautobot.music_transformer.learner Line 34 reads "from fastai1.fastai import basic_train # for predictions"
+musicautobot.musicautobot.music_transformer.model Line 1 reads "from fastai1.fastai.basics import *"
+musicautobot.musicautobot.music_transformer.model Line 2 reads "from fastai.text.models.transformer import TransformerXL"
